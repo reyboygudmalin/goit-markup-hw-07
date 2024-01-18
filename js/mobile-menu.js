@@ -18,10 +18,17 @@
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
 
+        window.matchMedia('(max-width: 767px)').addEventListener('change', e => {
+      if (!e.matches) return;
+ 
+        openMenuBtn.style.display = 'block';
+     
+    });
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
       mobileMenu.classList.remove('is-open');
-      openMenuBtn.setAttribute('aria-expanded', false);
+        openMenuBtn.setAttribute('aria-expanded', false);
+        openMenuBtn.style.display = 'none';
       bodyScrollLock.enableBodyScroll(document.body);
     });
 
