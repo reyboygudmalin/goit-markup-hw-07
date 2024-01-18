@@ -1033,9 +1033,11 @@ background-color: var(--linkcolor);
     color: #fff;
 }
 .menu-toggle{
-    display: none;
     border: none;
     background-color: transparent;
+}
+.js-open-menu{
+    display: none;
 }
 
 .mobile-menu {
