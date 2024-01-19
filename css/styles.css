@@ -852,7 +852,7 @@ background-color: var(--linkcolor);
     margin-left: 16px;
     margin-right: 0;
 }
-@media screen and (max-width:767px) and (min-width:428px)  {
+@media screen and (max-width:767px) {
     .menu {
         display: none;
     }
